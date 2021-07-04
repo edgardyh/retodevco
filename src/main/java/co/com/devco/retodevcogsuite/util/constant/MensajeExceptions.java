@@ -6,4 +6,7 @@ public class MensajeExceptions {
             "2. No existian correos en papelera. 3.Habian muchos mas correos en papelera, por ende " +
             "la papelera NO está vacia";
 
+    public static final String MENSAJE_PERSONALIZADO = "Revise los xpath. tal vez alla algun error de mapeo";
+
+
 }

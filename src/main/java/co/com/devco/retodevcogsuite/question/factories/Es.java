@@ -16,5 +16,8 @@ public class Es {
     public static Question <String> lblFinalPapeleraVacia (Target obj){
         return new MensajeFinal(obj);
     }
+    public static Question <String> lblFinalNombreContacto (Target obj){
+        return new MensajeFinal(obj);
+    }
 
 }

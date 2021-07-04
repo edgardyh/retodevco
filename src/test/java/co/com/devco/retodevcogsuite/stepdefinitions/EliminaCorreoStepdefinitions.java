@@ -6,7 +6,6 @@ import co.com.devco.retodevcogsuite.task.factories.Diligencia;
 import co.com.devco.retodevcogsuite.userinterface.BandejaDeCorreoPage;
 import co.com.devco.retodevcogsuite.util.constant.MensajeExceptions;
 import io.cucumber.java.es.Cuando;
-import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
