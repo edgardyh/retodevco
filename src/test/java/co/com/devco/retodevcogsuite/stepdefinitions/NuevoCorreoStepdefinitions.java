@@ -35,13 +35,13 @@ public class NuevoCorreoStepdefinitions {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://gmail.com"));
     }
 
-    @Cuando("el usuario ingresa por la pantalla de crear una cuenta de google y llena todos los campos solicitados y acepta las condiciones")
+    @Cuando("el usuario ingresa por la pantalla de crear una cuenta de google y llena todos los campos solicitados excepto numero de telefono de confirmacion")
     public void elUsuarioIngresaPorLaPantallaDeCrearUnaCuentaDeGoogleYLlenaTodosLosCamposSolicitadosYAceptaLasCondiciones() {
         // Write code here that turns the phrase above into concrete actions
-        OnStage.theActorInTheSpotlight().attemptsTo(Diligencia.seCreaCorreo());
+        OnStage.theActorInTheSpotlight().attemptsTo(Diligencia.seValidaNoCompletarCamposDeCorreo());
     }
 
-    @Entonces("el deberia visualizar la bandeja de correo")
+    @Entonces("el deberia visualizar un mensaje informado que no es posible continuar por no llenar el campo numero de telefono")
     public void elDeberiaVisualizarLaBandejaDeCorreo() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Es.lblCrearCorreoNumTelefono(IngresoCorreoPage.LBL_VALIDACION_NRO_TELFONO), Matchers.equalTo("El formato de este número de teléfono no se reconoce. Comprueba el país y el número.")));
     }
