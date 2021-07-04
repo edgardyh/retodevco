@@ -18,6 +18,7 @@ public class DatosCorreo {
     public String asunto3;
     public String descripcion3;
 
+    public String papeleralimpia;
 
 
     public DatosCorreo(final DatosBuilder datosBuilder){
@@ -32,6 +33,7 @@ public class DatosCorreo {
         this.descripcion2 = datosBuilder.descripcion2;
         this.asunto3 = datosBuilder.asunto3;
         this.descripcion3 = datosBuilder.descripcion3;
+        this.papeleralimpia = datosBuilder.papeleralimpia;
     }
 
     public String getNomcrearcuenta() {
@@ -63,4 +65,6 @@ public class DatosCorreo {
     public String getAsunto3() { return asunto3; }
 
     public String getDescripcion3() { return descripcion3; }
+
+    public String getPapeleralimpia() { return papeleralimpia; }
 }

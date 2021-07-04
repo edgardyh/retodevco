@@ -26,7 +26,6 @@ public class EnvioDeCorreo implements Task{
                 WaitFor.seconds(6),
                 Click.on(InicioDeSesionPage.BTN_SIGUIENTE_INICIO_SESION),
                 Click.on(LBL_INICIO_SESION_DINAMICO.of("Introducir una contraseña")),
-                //WaitFor.seconds(10),
                 Enter.theValue(DatosBuilder.con().unDatosCorreo().getContracorreodefinido()).into(INP_CONTRA_INICIO_SESION),
                 Click.on(InicioDeSesionPage.BTN_SIGUIENTE_INICIO_SESION),
                 Click.on(INP_INICIO_SESION_DINAMICO.of("Redactar")),

@@ -13,5 +13,8 @@ public class Es {
         return new MensajeFinal(obj);
     }
     public static Question <String> lblCorreosEnviados (Target obj){ return new CorreosEnviados(obj); }
+    public static Question <String> lblFinalPapeleraVacia (Target obj){
+        return new MensajeFinal(obj);
+    }
 
 }

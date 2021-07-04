@@ -19,6 +19,8 @@ public class DatosBuilder implements Builder <DatosCorreo> {
     public String asunto3;
     public String descripcion3;
 
+    public String papeleralimpia;
+
     public DatosBuilder(){
         this.nomcrearcuenta = "";
         this.apecrearcuenta = "";
@@ -31,6 +33,7 @@ public class DatosBuilder implements Builder <DatosCorreo> {
         this.descripcion2 = "";
         this.asunto3 = "";
         this.descripcion3 = "";
+        this.papeleralimpia = "";
     }
 
     public static DatosBuilder con(){ return new DatosBuilder();  }
@@ -93,6 +96,12 @@ public class DatosBuilder implements Builder <DatosCorreo> {
         return this;
     }
 
+    public DatosBuilder conPapeleralimpia(String papeleralimpia) {
+        this.papeleralimpia = papeleralimpia;
+        return this;
+    }
+
+
     public DatosCorreo unDatosCorreo(){
         conNomcrearcuenta("RobotPrueba");
         conApecrearcuenta("edgar");
@@ -108,6 +117,7 @@ public class DatosBuilder implements Builder <DatosCorreo> {
         conAsunto3("Notificación de credito Hipotecario");
         conDescripcion3("Es una alternativa para que cumplas la meta de tener tu casa propia, a través de un " +
                 "préstamo a largo plazo en el que pagas cuotas mensuales y el inmueble queda como garantía.");
+        conPapeleralimpia("No hay conversaciones en la papelera.");
         return build();
     }
 
@@ -132,4 +142,6 @@ public class DatosBuilder implements Builder <DatosCorreo> {
     public String getAsunto3() { return asunto3; }
 
     public String getDescripcion3() { return descripcion3; }
+
+    public String getPapeleralimpia() { return papeleralimpia; }
 }
