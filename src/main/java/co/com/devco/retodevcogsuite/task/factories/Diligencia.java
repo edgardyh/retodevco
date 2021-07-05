@@ -1,9 +1,6 @@
 package co.com.devco.retodevcogsuite.task.factories;
 
-import co.com.devco.retodevcogsuite.task.AgregarContactosYEtiquetas;
-import co.com.devco.retodevcogsuite.task.CrearCorreo;
-import co.com.devco.retodevcogsuite.task.EliminarCorreo;
-import co.com.devco.retodevcogsuite.task.EnvioDeCorreo;
+import co.com.devco.retodevcogsuite.task.*;
 import net.serenitybdd.screenplay.Tasks;
 
 public class Diligencia {
@@ -12,5 +9,5 @@ public class Diligencia {
     public static EnvioDeCorreo seEnviaCorreo() { return Tasks.instrumented(EnvioDeCorreo.class); }
     public static EliminarCorreo seEliminaCorreo() { return Tasks.instrumented(EliminarCorreo.class); }
     public static AgregarContactosYEtiquetas seAgreganContactos() { return Tasks.instrumented(AgregarContactosYEtiquetas.class); }
-
+    public static CrearEventoCalendario seCreaEventoCalendario() { return Tasks.instrumented(CrearEventoCalendario.class); }
 }

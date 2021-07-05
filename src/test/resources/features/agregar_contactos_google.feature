@@ -1,7 +1,7 @@
 # language: es
 
-Característica: yo como usuario requiere acceder a Contactos de google y crear Etiquetas en las que se puedan
-  agregar contactos. Además que el botón Guardar se habilite al llenar un solo campo
+Característica: yo como usuario requiere acceder a Contactos de google para
+  agregar un contacto. Además que el botón Guardar se habilite al llenar un solo campo
 
   @AgregarContactos
   Escenario: Abrir pagina - Google Contactos - con SerintyBDD

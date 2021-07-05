@@ -8,7 +8,7 @@ public class ContactosBuilder implements Builder <DatosContacto> {
     private String nombrecontacto1;
     private String apecontacto1;
     private String nro1;
-    private String nombrecontacto2;
+    private String nombreevento;
     private String apecontacto2;
     private String nro2;
 
@@ -16,7 +16,7 @@ public class ContactosBuilder implements Builder <DatosContacto> {
         this.nombrecontacto1 = "";
         this.apecontacto1 = "";
         this.nro1 = "";
-        this.nombrecontacto2 = "";
+        this.nombreevento = "";
         this.apecontacto2 = "";
         this.nro2 = "";
     }
@@ -41,8 +41,8 @@ public class ContactosBuilder implements Builder <DatosContacto> {
         return this;
     }
 
-    public ContactosBuilder conNombrecontacto2(String nombrecontacto2) {
-        this.nombrecontacto2 = nombrecontacto2;
+    public ContactosBuilder conNombreevento(String nombreevento) {
+        this.nombreevento = nombreevento;
         return this;
     }
 
@@ -60,7 +60,7 @@ public class ContactosBuilder implements Builder <DatosContacto> {
         conNombrecontacto1("gabriel");
         conApecontacto1("Santos");
         conNro1("3225555");
-        conNombrecontacto2("Marcos");
+        conNombreevento("Asociados al proyecto Fitness");
         conApecontacto2("Lopez");
         conNro2("3888888");
         return build();
@@ -72,7 +72,7 @@ public class ContactosBuilder implements Builder <DatosContacto> {
 
     public String getNro1() { return nro1; }
 
-    public String getNombrecontacto2() { return nombrecontacto2; }
+    public String getNombreevento() { return nombreevento; }
 
     public String getApecontacto2() { return apecontacto2; }
 

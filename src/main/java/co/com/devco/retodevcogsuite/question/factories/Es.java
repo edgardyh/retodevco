@@ -1,6 +1,7 @@
 package co.com.devco.retodevcogsuite.question.factories;
 
 import co.com.devco.retodevcogsuite.question.CorreosEnviados;
+import co.com.devco.retodevcogsuite.question.MensajeCalendarioFinal;
 import co.com.devco.retodevcogsuite.question.MensajeFinal;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.targets.Target;
@@ -19,5 +20,6 @@ public class Es {
     public static Question <String> lblFinalNombreContacto (Target obj){
         return new MensajeFinal(obj);
     }
+    public static Question <String> lblFinalNombreDeEvento (Target obj){ return new MensajeCalendarioFinal(obj); }
 
 }

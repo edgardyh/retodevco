@@ -3,6 +3,7 @@ package co.com.devco.retodevcogsuite.task;
 import co.com.devco.automation.mobile.actions.WaitFor;
 import co.com.devco.retodevcogsuite.model.builders.DatosBuilder;
 import co.com.devco.retodevcogsuite.userinterface.IngresoCorreoPage;
+import co.com.devco.retodevcogsuite.util.constant.CostantesTiempo;
 import io.cucumber.java.af.En;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -31,7 +32,7 @@ public class CrearCorreo implements Task {
                 Click.on(LBL_VALIDACION_CAMPOAPELLIDO),
                 Enter.theValue(DatosBuilder.con().unDatosCorreo().getApecrearcuenta()).into(INP_DATOS_PARA_CREAR_CUENTA.of("lastName")),
                 Click.on(BTN_SIGUIENTE),
-                WaitFor.seconds(10),
+                WaitFor.seconds(CostantesTiempo.TIEMPO_10),
                 Enter.theValue("42").into(INP_NRO_TELEFONO),
                 Click.on(BTN_SIGUIENTE),
                 Click.on(LBL_VALIDACION_NRO_TELFONO)

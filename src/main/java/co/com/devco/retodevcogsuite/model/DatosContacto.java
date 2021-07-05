@@ -8,7 +8,7 @@ public class DatosContacto {
     private String nombrecontacto1;
     private String apecontacto1;
     private String nro1;
-    private String nombrecontacto2;
+    private String nombreevento;
     private String apecontacto2;
     private String nro2;
 
@@ -16,7 +16,7 @@ public class DatosContacto {
         this.nombrecontacto1 = contactosBuilder.getNombrecontacto1();
         this.apecontacto1 = contactosBuilder.getApecontacto1();
         this.nro1 = contactosBuilder.getNro1();
-        this.nombrecontacto2 = contactosBuilder.getNombrecontacto2();
+        this.nombreevento = contactosBuilder.getNombreevento();
         this.apecontacto2 = contactosBuilder.getApecontacto2();
         this.nro2 = contactosBuilder.getNro2();
     }
@@ -27,7 +27,7 @@ public class DatosContacto {
 
     public String getNro1() { return nro1; }
 
-    public String getNombrecontacto2() { return nombrecontacto2; }
+    public String getNombreevento() { return nombreevento; }
 
     public String getApecontacto2() { return apecontacto2; }
 
