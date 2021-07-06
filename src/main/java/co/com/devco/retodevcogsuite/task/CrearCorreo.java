@@ -2,15 +2,12 @@ package co.com.devco.retodevcogsuite.task;
 
 import co.com.devco.automation.mobile.actions.WaitFor;
 import co.com.devco.retodevcogsuite.model.builders.DatosBuilder;
-import co.com.devco.retodevcogsuite.userinterface.IngresoCorreoPage;
 import co.com.devco.retodevcogsuite.util.constant.CostantesTiempo;
-import io.cucumber.java.af.En;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
-import java.time.Clock;
 
 import static co.com.devco.retodevcogsuite.userinterface.IngresoCorreoPage.*;
 

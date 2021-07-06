@@ -13,8 +13,8 @@ import org.hamcrest.Matchers;
 
 public class AgregarEventoCalendarioStepdefinitions {
 
-    @Dado("que un usuario iniciar sesion por GoogleCalendar")
-    public void queUnUsuarioIniciarSesionPorGoogleCalendar() {
+    @Dado("que un usuario inicia sesion por GoogleCalendar")
+    public void queUnUsuarioIniciaSesionPorGoogleCalendar() {
         OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://calendar.google.com/"));
     }
 
@@ -23,8 +23,8 @@ public class AgregarEventoCalendarioStepdefinitions {
         OnStage.theActorInTheSpotlight().attemptsTo(Diligencia.seCreaEventoCalendario());
     }
 
-    @Entonces("el evento no deberia guardarse porque tiene fecha fin no posterior a la fecha inicio")
-    public void elNoDeberiaVisualizarElEventoConFechasEnRetroceso() {
+    @Entonces("el evento no deberia guardarse porque tiene fecha fin no posterior a la fecha de inicio")
+    public void elEventoNoDeberiaGuardarsePorqueTieneFechaFinNoPosteriorALaFechaDeInicio() {
         OnStage.theActorInTheSpotlight().should(
                 GivenWhenThen.seeThat(Es.lblFinalNombreDeEvento(BandejaDeCorreoPage.INP_FINAL_EDITAR_EVENTO),
                         Matchers.isEmptyOrNullString())

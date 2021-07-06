@@ -10,11 +10,8 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.waits.Wait;
-import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static co.com.devco.retodevcogsuite.userinterface.InicioDeSesionPage.*;
-import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isEnabled;
 
 public class EnvioDeCorreo implements Task{
     @Override

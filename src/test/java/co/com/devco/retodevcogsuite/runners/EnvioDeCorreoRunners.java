@@ -5,10 +5,10 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "src/test/resources/features/flujo_de_correo.feature",
+@CucumberOptions(features = "src/test/resources/features/envio_de_correo.feature",
         glue = "co/com/devco/retodevcogsuite/stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@CrearReunionEnCalendario2")
+        tags = "")
 
 public class EnvioDeCorreoRunners {
 }

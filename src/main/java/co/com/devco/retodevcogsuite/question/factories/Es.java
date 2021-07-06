@@ -1,8 +1,6 @@
 package co.com.devco.retodevcogsuite.question.factories;
 
-import co.com.devco.retodevcogsuite.question.CorreosEnviados;
-import co.com.devco.retodevcogsuite.question.MensajeCalendarioFinal;
-import co.com.devco.retodevcogsuite.question.MensajeFinal;
+import co.com.devco.retodevcogsuite.question.*;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.targets.Target;
 
@@ -21,5 +19,8 @@ public class Es {
         return new MensajeFinal(obj);
     }
     public static Question <String> lblFinalNombreDeEvento (Target obj){ return new MensajeCalendarioFinal(obj); }
+    public static Question <Boolean> lblVisibleProducto(){ return new MensajeFinalAmazon(); }
+    public static Question <Boolean> lblVisibleProNoDisponible(){ return new MensajeAmazonNoDisponible(); }
+    public static Question <Boolean> lblVisibleSubtotales(){ return new SubtotalesProductosAmazon(); }
 
 }

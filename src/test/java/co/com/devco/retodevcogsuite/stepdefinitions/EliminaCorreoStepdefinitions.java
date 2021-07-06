@@ -1,4 +1,5 @@
 package co.com.devco.retodevcogsuite.stepdefinitions;
+
 import co.com.devco.retodevcogsuite.exception.ExceptionLabel;
 import co.com.devco.retodevcogsuite.model.builders.DatosBuilder;
 import co.com.devco.retodevcogsuite.question.factories.Es;
@@ -13,8 +14,8 @@ import org.hamcrest.Matchers;
 
 public class EliminaCorreoStepdefinitions {
 
-    @Cuando("el usuario se loguea y elimina correos enviados y en papelera definitivamente")
-    public void elUsuarioSeLogueaYEliminaCorreosEnviadosYEnPapeleraDefinitivamente() {
+    @Cuando("el usuario se loguea y elimina correos enviados y en papelera elimina definitivamente")
+    public void elUsuarioSeLogueaYEliminaCorreosEnviadosYEnPapeleraEliminaDefinitivamente() {
         // Write code here that turns the phrase above into concrete actions
         OnStage.theActorInTheSpotlight().attemptsTo(Diligencia.seEliminaCorreo());
     }

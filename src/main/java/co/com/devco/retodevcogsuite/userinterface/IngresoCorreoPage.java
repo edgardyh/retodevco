@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 
 public class IngresoCorreoPage {
 
-
     public static final Target INP_CREAR_CUENTA = Target.the("Btn crear cuenta").located(By.xpath("//*[text()='Crear cuenta']"));
     public static final Target LBX_PARA_MI = Target.the("Lbl para mi").located(By.xpath("//*[text()='Para mí']"));
     public static final Target BTN_SIGUIENTE= Target.the("Btn siguiente").located(By.xpath("//*[text()='Siguiente']"));

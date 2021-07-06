@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features/eliminacion_de_correo.feature",
         glue = "co/com/devco/retodevcogsuite/stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@EliminaCorreos")
+        tags = "")
 
 public class EliminaCorreoRunners {
 }
