@@ -15,9 +15,6 @@ public class Es {
     public static Question <String> lblFinalPapeleraVacia (Target obj){
         return new MensajeFinal(obj);
     }
-    public static Question <String> lblFinalNombreContacto (Target obj){
-        return new MensajeFinal(obj);
-    }
     public static Question <String> lblFinalNombreDeEvento (Target obj){ return new MensajeCalendarioFinal(obj); }
     public static Question <Boolean> lblVisibleProducto(){ return new MensajeFinalAmazon(); }
     public static Question <Boolean> lblVisibleProNoDisponible(){ return new MensajeAmazonNoDisponible(); }

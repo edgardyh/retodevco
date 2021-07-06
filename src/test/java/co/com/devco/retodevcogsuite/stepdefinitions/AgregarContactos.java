@@ -1,18 +1,15 @@
 package co.com.devco.retodevcogsuite.stepdefinitions;
 
-import co.com.devco.retodevcogsuite.exception.ExceptionLabel;
+
 import co.com.devco.retodevcogsuite.model.builders.ContactosBuilder;
-import co.com.devco.retodevcogsuite.question.factories.Es;
 import co.com.devco.retodevcogsuite.task.factories.Diligencia;
 import co.com.devco.retodevcogsuite.userinterface.BandejaDeContactosPage;
-import co.com.devco.retodevcogsuite.util.constant.MensajeExceptions;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
-import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
-import org.hamcrest.Matchers;
+import net.serenitybdd.screenplay.ensure.Ensure;
 
 
 public class AgregarContactos {
@@ -30,12 +27,9 @@ public class AgregarContactos {
     @Entonces("el deberia visualizar el contacto agregado")
     public void elDeberiaVisualizarElContactoAgregado() {
         // Write code here that turns the phrase above into concrete actions
-        OnStage.theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(Es.lblFinalNombreContacto(BandejaDeContactosPage.LBL_FINAL_NOMBRE_CONTACO.of("gabriel Santos")),
-                        Matchers.equalTo(ContactosBuilder.con().unDatosContactos().getNombrecontacto1()+" "
-                                +ContactosBuilder.con().unDatosContactos().getApecontacto1()))
-                        .orComplainWith(ExceptionLabel.class, MensajeExceptions.MENSAJE_PERSONALIZADO)
-        );
+        OnStage.withCurrentActor(Ensure.that(BandejaDeContactosPage.LBL_FINAL_CINCO).text()
+                .contains(ContactosBuilder.con().unDatosContactos().getNombrecontacto1()
+                        +" "+ContactosBuilder.con().unDatosContactos().getApecontacto1()));
     }
 
 }

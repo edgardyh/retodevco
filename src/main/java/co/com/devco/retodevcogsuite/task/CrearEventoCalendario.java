@@ -1,6 +1,5 @@
 package co.com.devco.retodevcogsuite.task;
 
-import co.com.devco.automation.mobile.actions.WaitFor;
 import co.com.devco.retodevcogsuite.model.builders.ContactosBuilder;
 import co.com.devco.retodevcogsuite.model.builders.DatosBuilder;
 import co.com.devco.retodevcogsuite.userinterface.IngresoCorreoPage;
@@ -22,16 +21,16 @@ public class CrearEventoCalendario implements Task {
         actor.attemptsTo(
                 Enter.theValue(DatosBuilder.con().unDatosCorreo().getCorreodefinido()).into(INP_INI_SESION_DINAMICO.of("Correo electrónico o teléfono")),
                 Click.on(IngresoCorreoPage.BTN_SIGUIENTE),
-                WaitFor.seconds(CostantesTiempo.TIEMPO_5),
+                WaitUntil.the(INP_CONTRA_INICIO_SESION,isEnabled()).forNoMoreThan(10).seconds(),
                 Enter.theValue(DatosBuilder.con().unDatosCorreo().getContracorreodefinido()).into(INP_CONTRA_INICIO_SESION),
                 Click.on(InicioDeSesionPage.BTN_SIGUIENTE_INICIO_SESION),
-                WaitFor.seconds(CostantesTiempo.TIEMPO_10),
+                WaitUntil.the(BTN_CREAR_DOS,isEnabled()).forNoMoreThan(10).seconds(),
                 Click.on(BTN_CREAR_DOS),
                 WaitUntil.the(INP_AGREGAR_TITULO_EVENTO,isEnabled()).forNoMoreThan(CostantesTiempo.TIEMPO_60).seconds(),
                 Enter.theValue(ContactosBuilder.con().unDatosContactos().getNombreevento())
                         .into(INP_AGREGAR_TITULO_EVENTO),
                 Click.on(INP_FECHA_INICIAL),
-                WaitFor.seconds(CostantesTiempo.TIEMPO_5),
+                WaitUntil.the(CLD_DIA_FECHA_INCIO,isEnabled()).forNoMoreThan(10).seconds(),
                 Click.on(CLD_DIA_FECHA_INCIO),
                 Click.on(CHK_TODO_EL_DIA),
                 Click.on(INP_FECHA_FINAL),

@@ -20,6 +20,6 @@ public class BandejaDeContactosPage {
     public static final Target BTN_GUARDAR_CONTACTO = Target.the("boton guardar contacto")
             .located(By.xpath("//span[text()='Guardar']"));
     public static final Target LBL_FINAL_CINCO = Target.the("label de validación final")
-            .located(By.xpath("(//*[@id='contactName'])[1]"));
+            .located(By.xpath("(//*[@id='contactName'])[2]"));
 
 }
