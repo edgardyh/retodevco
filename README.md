@@ -15,3 +15,4 @@ Se ejecutan los Runners:
 
 
 #NOTA: Para ejecutar por segunda vez el EliminaCorreoRunners debe ejecutar EnvioDeCorreoRunners, como preparación de prueba
+# Si al iniciar a correr el robot sale la pantalla de google para confirmar cuenta, acceda primero manualmente y luego vuelva a correr el robot
