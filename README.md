@@ -13,6 +13,9 @@ Se ejecutan los Runners:
 5. CalendarioRunners -> Bug, Al crear evento permite guardarlo con fecha final menor que la fecha incial (solo sucede con un dia de anterioridad)
 6. ContactosRunners -> Agregación de un contacto
 
+Correo: zretodevcoo@gmail.com 
+
+Contraseña: iniciar sesion
 
 #NOTA: Para ejecutar por segunda vez el EliminaCorreoRunners debe ejecutar EnvioDeCorreoRunners, como preparación de prueba.
 
